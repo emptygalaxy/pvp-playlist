@@ -1,0 +1,28 @@
+{
+  "name": "pvp-playlist",
+  "version": "0.0.1",
+  "description": "A wrapper for ProVideoPlayer playlists",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "keywords": [
+    "pvp",
+    "provideoplayer"
+  ],
+  "author": "Nick Timman",
+  "license": "ISC",
+  "dependencies": {
+    "untildify": "^4.0.0",
+    "xml2js": "^0.4.22"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emptygalaxy/pvp-playlist.git"
+  },
+  "bugs": {
+    "url": "https://github.com/emptygalaxy/pvp-playlist/issues"
+  },
+  "homepage": "https://github.com/emptygalaxy/pvp-playlist#readme"
+}
