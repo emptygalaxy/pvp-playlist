@@ -1,10 +1,13 @@
+const RVXMLElement = require('./RVXMLElement').RVXMLElement;
 const PlaylistType = require('../PlaylistType.js').PlaylistType;
 const PlaybackBehavior = require('../PlaybackBehavior.js').PlaybackBehavior;
 
-class RVPVPMediaVideoCue
+class RVPVPMediaVideoCue extends RVXMLElement
 {
-    constructor()
+    constructor(element)
     {
+        super(element);
+
         /**
          *
          * @type {string}
@@ -27,7 +30,19 @@ class RVPVPMediaVideoCue
          * @type {number}
          */
         this.playbackBehavior = PlaybackBehavior.LOOP;
+
+        if(element.attributes.name === 'LOOP')
+        {
+
+        }
+
+        this.build();
+    }
+
+    build()
+    {
+        super.build();
     }
 }
 
-exports.RVPVPMediaVideoCue = RVPVPMediaVideoCue;
+module.exports.RVPVPMediaVideoCue = RVPVPMediaVideoCue;

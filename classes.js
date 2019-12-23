@@ -1,3 +1,4 @@
+const RVPVPDocument = require("./src/elements/RVPVPDocument").RVPVPDocument;
 const RVPVPPlaylist = require("./src/elements/RVPVPPlaylist").RVPVPPlaylist;
 const RVPVPMacroCue = require("./src/elements/RVPVPMacroCue").RVPVPMacroCue;
 const RVPVPMacroChildMedia = require("./src/elements/RVPVPMacroChildMedia").RVPVPMacroChildMedia;
@@ -7,6 +8,7 @@ const RVProTransitionObject = require("./src/elements/RVProTransitionObject").RV
 
 
 const classes = {
+    RVPVPDocument,
     RVPVPPlaylist,
     RVPVPMacroCue,
     RVPVPMacroChildMedia,
@@ -15,4 +17,4 @@ const classes = {
     RVProTransitionObject
 };
 
-exports.classes = classes;
+module.exports.classes = classes;

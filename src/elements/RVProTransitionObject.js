@@ -1,6 +1,11 @@
-class RVProTransitionObject
+const RVXMLElement = require('./RVXMLElement').RVXMLElement;
+
+class RVProTransitionObject extends RVXMLElement
 {
-    constructor() {
+    constructor(element)
+    {
+        super(element);
+
         /**
          * @type {number}
          */
@@ -30,12 +35,14 @@ class RVProTransitionObject
          */
         this.motionSpeed = 0;
 
-        /**
-         *
-         * @type {string}
-         */
-        this.rvXMLIvarName = 'transitionObject';
+        this.build();
     }
+
+    build()
+    {
+        super.build();
+    }
+
 }
 
 exports.RVProTransitionObject = RVProTransitionObject;
