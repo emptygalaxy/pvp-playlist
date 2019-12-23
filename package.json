@@ -1,6 +1,6 @@
 {
   "name": "pvp-playlist",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A wrapper for ProVideoPlayer playlists",
   "main": "index.js",
   "scripts": {

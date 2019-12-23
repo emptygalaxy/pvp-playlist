@@ -56,7 +56,8 @@ class RVPVPMacroChildMedia extends RVXMLElement
                     break;
 
                 default:
-                    alert('Unknown type: ' + item.name);
+                    // alert('Unknown type: ' + item.name);
+                    console.log('Unknown type: ' + item.name);
                     break;
             }
         }
